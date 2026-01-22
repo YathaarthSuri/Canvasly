@@ -1,0 +1,21 @@
+@reference "tailwindcss";
+
+.menuContainer {
+    @apply absolute px-5 py-1 flex justify-between w-1/4 left-1/2 top-10 rounded-md;
+    border: 1px solid var(--color-border-1);
+    transform: translateX(-50%);
+    box-shadow: var(--shadow-1);
+    background-color: var(--color-background-1);
+
+    .iconWrapper {
+        @apply cursor-pointer flex justify-center items-center h-10 w-10 rounded-md;
+
+        &:hover, &:active {
+            background-color: var(--color-text-2);
+        }
+        .icon {
+            color: var(--color-text-1);
+            font-size: 20px;
+        }
+    }
+}
